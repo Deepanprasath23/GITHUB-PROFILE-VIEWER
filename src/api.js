@@ -224,11 +224,6 @@ export function generateAIInsights(profile, repos, events) {
     insights.push({ icon: '✨', text: `Has earned ${totalStars.toLocaleString()} stars across ${repos.length} repositories.` });
   }
   
-  // Repo diversity
-  if (langStats.labels.length >= 5) {
-    insights.push({ icon: '🧠', text: `A polyglot developer comfortable with ${langStats.labels.length} different programming languages.` });
-  }
-  
   return insights;
 }
 
